@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Mushraf Ali | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="#home" class="nav-logo">Mushraf<span>.dev</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Welcome to my portfolio</span>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Md Mushraf Ali</span></h1>
+                    <h2 class="hero-subtitle">MERN Stack & Full-Stack Developer</h2>
+                    <p class="hero-desc">
+                        I build responsive, high-performance web applications and solve real-world problems with modern technologies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="profile.jpg" alt="Md Mushraf Ali profile photo" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know my background and passion</p>
+                </div>
+                <!-- Layout: CSS Grid (2 Columns: Bio & Highlights Card) -->
+                <div class="about-grid">
+                    <div class="about-bio">
+                        <h3>Passionate Developer & Problem Solver</h3>
+                        <p>
+                            I am a motivated MERN Stack Developer with practical experience in building modern web applications. 
+                            My focus is on writing clean, accessible code, designing intuitive user interfaces, and architecting scalable backend APIs.
+                        </p>
+                        <p>
+                            With strong foundations in JavaScript, Data Structures & Algorithms, and modern frontend/backend frameworks, I love turning complex challenges into straightforward, elegant digital solutions.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Quick Details</h3>
+                        <ul class="about-info-list">
+                            <li class="info-item"><strong>Location:</strong> Bengaluru, India</li>
+                            <li class="info-item"><strong>Email:</strong> mushrafali@gmail.com</li>
+                            <li class="info-item"><strong>Degree:</strong> B.Tech in CSE</li>
+                            <li class="info-item"><strong>Status:</strong> Available for work</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Frontend</h3>
+                        <ul class="skill-tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Backend</h3>
+                        <ul class="skill-tags">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>RESTful APIs</li>
+                            <li>Socket.IO</li>
+                            <li>Authentication (JWT)</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Databases & Cloud</h3>
+                        <ul class="skill-tags">
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Firebase</li>
+                            <li>Cloudinary</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Tools & Core</h3>
+                        <ul class="skill-tags">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Vercel</li>
+                            <li>Data Structures (DSA)</li>
+                            <li>OOP & Problem Solving</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A selection of my recent development work</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Chat Web Application</h3>
+                            <p>Real-time messaging application with live communication channels, user authentication, and responsive chat UI.</p>
+                            <div class="project-tags">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>Socket.IO</span>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mushraf0105" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>NextScore Web App</h3>
+                            <p>Interactive web application delivering responsive interface designs, toast notifications, and dynamic score tracking.</p>
+                            <div class="project-tags">
+                                <span>React.js</span>
+                                <span>Express.js</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mushraf0105" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>QR Code Studio</h3>
+                            <p>Fast, client-side QR code generator allowing users to create, preview, and download custom QR codes instantly.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Vercel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mushraf0105" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience & Education</h2>
+                    <p class="section-subtitle">My professional journey and academic background</p>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-column">
+                        <h3 class="column-title">Work Experience</h3>
+                        <div class="timeline">
+                            <article class="timeline-card">
+                                <span class="timeline-period">Oct 2026 - Present</span>
+                                <h4>Web Developer Intern</h4>
+                                <span class="timeline-place">Veda Technology</span>
+                                <p>Developing responsive web projects, practicing modern frontend/backend techniques, and ensuring cross-device compatibility.</p>
+                            </article>
+                            <article class="timeline-card">
+                                <span class="timeline-period">Feb 2026 - Aug 2026</span>
+                                <h4>Software Development Intern</h4>
+                                <span class="timeline-place">Leadrat</span>
+                                <p>Assisted in building and maintaining frontend and backend software features while solving production bugs.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="timeline-column">
+                        <h3 class="column-title">Education</h3>
+                        <div class="timeline">
+                            <article class="timeline-card">
+                                <span class="timeline-period">Graduated</span>
+                                <h4>B.Tech in Computer Science & Engineering</h4>
+                                <span class="timeline-place">Bengal Institute of Technology and Management (MAKAUT)</span>
+                                <p>Coursework in Data Structures, Algorithms, Web Development, Object-Oriented Programming, and Database Systems.</p>
+                            </article>
+                            <article class="timeline-card">
+                                <span class="timeline-period">Completed</span>
+                                <h4>Higher Secondary (Class 12th - Science)</h4>
+                                <span class="timeline-place">R.K. Dwarika College (BSEB)</span>
+                                <p>Focused on Physics, Chemistry, and Mathematics.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Feel free to reach out for collaborations or opportunities</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-details">
+                        <h3>Contact Information</h3>
+                        <p>I am always open to discussing new web development projects, creative ideas, or opportunities.</p>
+                        
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:mushrafali@gmail.com">mushrafali@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <a href="tel:+918210766667">+91-8210766667</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location:</span>
+                            <span>Bengaluru, Karnataka, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Profiles:</span>
+                            <div class="social-links">
+                                <a href="https://github.com/Mushraf0105" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://www.linkedin.com/in/md-mushraf-ali-83b4a42a3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Hello Mushraf, I would like to discuss..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                        <p class="form-message" id="form-message" role="alert" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Md Mushraf Ali. All rights reserved.</p>
+            <a href="#home" class="back-to-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
