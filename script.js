@@ -18,6 +18,53 @@ if (navToggle && navMenu) {
     });
 }
 
+// Dynamic Scroll Progress Indicator
+const scrollProgressBar = document.getElementById('scroll-progress-bar');
+
+function updateScrollProgress() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    if (scrollHeight > 0 && scrollProgressBar) {
+        const progress = (scrollTop / scrollHeight) * 100;
+        scrollProgressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+    }
+}
+
+window.addEventListener('scroll', updateScrollProgress, { passive: true });
+updateScrollProgress();
+
+// Dark / Light Theme Toggle with LocalStorage Memory
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+        localStorage.setItem('portfolio-theme', theme);
+    } catch (e) {
+        // Fallback for private browsing or disabled localStorage
+    }
+}
+
+if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(targetTheme);
+    });
+}
+
+// Synchronize with OS theme changes if user has no manual override saved
+if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        try {
+            if (!localStorage.getItem('portfolio-theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        } catch (e) { }
+    });
+}
+
 // Active Nav Link Highlighting on Scroll
 const sections = document.querySelectorAll('section[id]');
 
@@ -81,4 +128,70 @@ if (contactForm && formMessage) {
         }, 5000);
     });
 }
+
+// Dynamic Typewriter Effect (Hero Section)
+const typedTextSpan = document.getElementById('typed-text');
+const words = [
+    'MERN Stack Developer',
+    'Full-Stack Developer',
+    'React.js & Node.js Specialist',
+    'Passionate Problem Solver'
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    if (!typedTextSpan) return;
+
+    const currentWord = words[wordIndex];
+
+    if (isDeleting) {
+        typedTextSpan.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typedTextSpan.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    let typeSpeed = isDeleting ? 45 : 90;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+        typeSpeed = 1800; // Pause at end of completed word
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typeSpeed = 400; // Pause before starting next word
+    }
+
+    setTimeout(typeEffect, typeSpeed);
+}
+
+if (typedTextSpan) {
+    setTimeout(typeEffect, 600);
+}
+
+// Scroll Reveal Animations (Native IntersectionObserver)
+const revealElements = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window && revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+} else {
+    revealElements.forEach(el => el.classList.add('active'));
+}
+
 
