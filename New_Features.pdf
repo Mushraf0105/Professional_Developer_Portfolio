@@ -1,0 +1,1376 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 7 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R /F3 11 0 R /F4 12 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 7362 >>
+stream
+BT
+/F3 7.5 Tf
+0.4 0.45 0.5 rg
+40 764 Td
+(PORTFOLIO ENHANCEMENT REPORT — FEATURES & IMPLEMENTATION LOG) Tj
+ET
+0.4 w
+0.8 0.82 0.85 RG
+40 758 m 572 758 l S
+BT
+/F2 15 Tf
+0.08 0.2 0.55 rg
+174.00 735.00 Td
+(PROFESSIONAL DEVELOPER PORTFOLIO) Tj
+ET
+BT
+/F3 9.2 Tf
+0.25 0.3 0.4 rg
+186.40 721.00 Td
+(New Features & Technical Implementation Architecture) Tj
+ET
+BT
+/F2 7.5 Tf
+0.12 0.48 0.25 rg
+128.62 709.00 Td
+(Changelog Dates: Nov 02, 2026 & Nov 03, 2026 | Tech: 100% Vanilla HTML5, CSS3 & ES6 JS) Tj
+ET
+1 w
+0.15 0.35 0.7 RG
+40 696.00 m 572 696.00 l S
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 683.00 Td
+(1. Executive Overview & Development Changelog) Tj
+ET
+BT
+/F2 7.5 Tf
+0.15 0.35 0.65 rg
+481.25 683.00 Td
+([ Changelog Timeline ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 680.00 m 572 680.00 l S
+BT
+/F1 8 Tf
+0.15 0.2 0.25 rg
+40.00 669.00 Td
+(This technical report documents the complete feature set implemented for the Professional Developer Portfolio. Items 2 through 4 were) Tj
+ET
+BT
+/F1 8 Tf
+0.15 0.2 0.25 rg
+40.00 658.50 Td
+(engineered on November 03, 2026 \(Live "Available for Work" status indicator, interactive project category filter tabs, and floating) Tj
+ET
+BT
+/F1 8 Tf
+0.15 0.2 0.25 rg
+40.00 648.00 Td
+(circular scroll progress ring\). Items 5 through 10 were engineered on November 02, 2026 \(top scroll progress bar, dark/light theme) Tj
+ET
+BT
+/F1 8 Tf
+0.15 0.2 0.25 rg
+40.00 637.50 Td
+(switcher with persistent memory, dynamic typewriter effect, IntersectionObserver scroll reveal animations, official vector resume) Tj
+ET
+BT
+/F1 8 Tf
+0.15 0.2 0.25 rg
+40.00 627.00 Td
+(integration, and architectural standards\). All implementations strictly utilize 100% vanilla web standards with zero external) Tj
+ET
+BT
+/F1 8 Tf
+0.15 0.2 0.25 rg
+40.00 616.50 Td
+(dependencies.) Tj
+ET
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 601.50 Td
+(2. Live "Available for Work" Status Indicator) Tj
+ET
+BT
+/F2 7.5 Tf
+0.1 0.55 0.25 rg
+481.25 601.50 Td
+([ Date: Nov 03, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 598.50 m 572 598.50 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 587.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 587.50 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 587.50 Td
+(November 03, 2026 \(Nov 03, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 577.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 577.50 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 577.50 Td
+(A prominent status pill positioned above the Hero title displaying an active availability statement paired with a) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 567.50 Td
+(pulsing green radar dot.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 557.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 557.50 Td
+(Why it matters: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 557.50 Td
+(Recruiters and hiring managers immediately see candidate availability for immediate onboarding upon landing on the) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 547.50 Td
+(page.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 537.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 537.50 Td
+(How it was built: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 537.50 Td
+(A semantic .status-pill with CSS backdrop blur and an animated .status-dot. A CSS pseudo-element \(::after\) uses) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 527.50 Td
+(@keyframes statusPulse to expand and fade continuously.) Tj
+ET
+0.86 0.89 0.94 rg
+40 458.50 532 61.00 re f
+0.5 w
+0.7 0.75 0.82 RG
+40 458.50 532 61.00 re S
+BT
+/F2 6.5 Tf
+0.2 0.3 0.55 rg
+47.00 514.50 Td
+(PULSING RADAR STATUS PILL IMPLEMENTATION) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 503.50 Td
+(/* HTML: <div class="status-pill"><span class="status-dot"></span><span>Available for Work</span></div> */) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 494.50 Td
+(.status-dot { width: 8px; height: 8px; border-radius: 50%; background-color: #22c55e; position: relative; }) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 485.50 Td
+(.status-dot::after { content: ""; position: absolute; inset: -2px; border-radius: 50%;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 476.50 Td
+(    background-color: rgba\(34, 197, 94, 0.6\); animation: statusPulse 1.8s infinite; }) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 467.50 Td
+(@keyframes statusPulse { 0% { transform: scale\(0.9\); opacity: 0.9; } 70% { transform: scale\(2.2\); opacity: 0; } }) Tj
+ET
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 449.50 Td
+(3. Interactive Project Category Filter Tabs) Tj
+ET
+BT
+/F2 7.5 Tf
+0.1 0.55 0.25 rg
+481.25 449.50 Td
+([ Date: Nov 03, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 446.50 m 572 446.50 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 435.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 435.50 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 435.50 Td
+(November 03, 2026 \(Nov 03, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 425.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 425.50 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 425.50 Td
+(Interactive category filter tabs above the projects section: "All", "Full-Stack / MERN", "Mobile App", and) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 415.50 Td
+("Frontend & Tools".) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 405.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 405.50 Td
+(Dynamic Filtering: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+135.51 405.50 Td
+(Visitors can instantly isolate full-stack web applications, React Native mobile apps, or frontend utilities) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 395.50 Td
+(with instantaneous client-side DOM toggling.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 385.50 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 385.50 Td
+(How it was built: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 385.50 Td
+(Buttons carry data-filter attributes matching project cards' data-category attributes. JavaScript listens for tab) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 375.50 Td
+(clicks, updates active styling, and toggles .is-hidden with zero page reloads.) Tj
+ET
+0.86 0.89 0.94 rg
+40 270.50 532 97.00 re f
+0.5 w
+0.7 0.75 0.82 RG
+40 270.50 532 97.00 re S
+BT
+/F2 6.5 Tf
+0.2 0.3 0.55 rg
+47.00 362.50 Td
+(INSTANT CATEGORY FILTER SYSTEM) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 351.50 Td
+(// JavaScript Event Listener for Filter Tabs in script.js:) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 342.50 Td
+(filterBtns.forEach\(btn => btn.addEventListener\("click", \(\) => {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 333.50 Td
+(    filterBtns.forEach\(b => b.classList.remove\("active"\)\); btn.classList.add\("active"\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 324.50 Td
+(    const filterValue = btn.getAttribute\("data-filter"\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 315.50 Td
+(    projectCards.forEach\(card => {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 306.50 Td
+(        const match = filterValue === "all" || card.getAttribute\("data-category"\) === filterValue;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 297.50 Td
+(        card.classList.toggle\("is-hidden", !match\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 288.50 Td
+(    }\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 279.50 Td
+(}\)\);) Tj
+ET
+0.4 w
+0.8 0.82 0.85 RG
+40 40 m 572 40 l S
+BT
+/F1 7.2 Tf
+0.45 0.5 0.55 rg
+40 28 Td
+(Professional Portfolio — Features & Technical Changelog \(Nov 02 - Nov 03, 2026\)) Tj
+ET
+BT
+/F1 7.2 Tf
+0.45 0.5 0.55 rg
+532.4 28 Td
+(Page 1 of 3) Tj
+ET
+
+endstream
+endobj
+7 0 obj
+<< /Length 7749 >>
+stream
+BT
+/F3 7.5 Tf
+0.4 0.45 0.5 rg
+40 764 Td
+(PORTFOLIO ENHANCEMENT REPORT — FEATURES & IMPLEMENTATION LOG) Tj
+ET
+0.4 w
+0.8 0.82 0.85 RG
+40 758 m 572 758 l S
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 735.00 Td
+(4. Floating Back-to-Top Button with Circular Progress Ring) Tj
+ET
+BT
+/F2 7.5 Tf
+0.1 0.55 0.25 rg
+481.25 735.00 Td
+([ Date: Nov 03, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 732.00 m 572 732.00 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 721.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 721.00 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 721.00 Td
+(November 03, 2026 \(Nov 03, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 711.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 711.00 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 711.00 Td
+(A floating circular button in the bottom-right corner featuring an embedded SVG progress ring that fills clockwise) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 701.00 Td
+(as the user scrolls, paired with an upward arrow.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 691.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 691.00 Td
+(Scroll Behavior: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+126.93 691.00 Td
+(Remains hidden at the top of the page; smoothly fades and translates into view when the visitor scrolls past) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 681.00 Td
+(350px. Clicking it smoothly glides to top.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 671.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 671.00 Td
+(SVG Math & Architecture: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+161.25 671.00 Td
+(Circle radius r=20 gives circumference C = 2 * PI * 20 = 125.66. The stroke-dashoffset is calculated) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 661.00 Td
+(dynamically as \(circumference - \(scrollPercent * circumference\)\).) Tj
+ET
+0.86 0.89 0.94 rg
+40 529.00 532 124.00 re f
+0.5 w
+0.7 0.75 0.82 RG
+40 529.00 532 124.00 re S
+BT
+/F2 6.5 Tf
+0.2 0.3 0.55 rg
+47.00 648.00 Td
+(CIRCULAR SVG PROGRESS RING IMPLEMENTATION) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 637.00 Td
+(// HTML: <button class="scroll-top-btn" id="scroll-top-btn"><svg><circle class="progress-ring-circle" r="20" /></svg></button>) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 628.00 Td
+(// JavaScript Scroll & Offset Calculation:) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 619.00 Td
+(const circumference = 2 * Math.PI * 20; // 125.66) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 610.00 Td
+(function handleScrollTopButton\(\) {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 601.00 Td
+(    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 592.00 Td
+(    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 583.00 Td
+(    scrollTopBtn.classList.toggle\("visible", scrollTop > 350\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 574.00 Td
+(    if \(scrollHeight > 0\) {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 565.00 Td
+(        const progress = Math.min\(1, Math.max\(0, scrollTop / scrollHeight\)\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 556.00 Td
+(        progressCircle.style.strokeDashoffset = circumference - \(progress * circumference\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 547.00 Td
+(    }) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 538.00 Td
+(}) Tj
+ET
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 520.00 Td
+(5. Dynamic Scroll Progress Bar \(Top Pinned\)) Tj
+ET
+BT
+/F2 7.5 Tf
+0.25 0.35 0.65 rg
+477.13 520.00 Td
+([ Date : nov 02, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 517.00 m 572 517.00 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 506.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 506.00 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 506.00 Td
+(November 02, 2026 \(Date : nov 02, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 496.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 496.00 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 496.00 Td
+(A thin, 3.5px viewport-pinned gradient bar at z-index: 1100 tracking total reading depth in real-time from 0% to) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 486.00 Td
+(100%.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 476.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 476.00 Td
+(How it was built: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 476.00 Td
+(A passive window scroll listener recalculates percentage \(scrollTop / scrollHeight\) * 100 and updates CSS width) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 466.00 Td
+(without layout re-flow.) Tj
+ET
+0.86 0.89 0.94 rg
+40 397.00 532 61.00 re f
+0.5 w
+0.7 0.75 0.82 RG
+40 397.00 532 61.00 re S
+BT
+/F2 6.5 Tf
+0.2 0.3 0.55 rg
+47.00 453.00 Td
+(TOP VIEWPORT PROGRESS BAR) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 442.00 Td
+(// CSS: .scroll-progress-bar { height: 100%; width: 0%; background: linear-gradient\(90deg, #2563eb, #8b5cf6, #06b6d4\); }) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 433.00 Td
+(window.addEventListener\("scroll", \(\) => {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 424.00 Td
+(    const percent = \(window.pageYOffset / \(document.documentElement.scrollHeight - window.innerHeight\)\) * 100;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 415.00 Td
+(    scrollProgressBar.style.width = `${Math.min\(100, Math.max\(0, percent\)\)}%`;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 406.00 Td
+(}, { passive: true }\);) Tj
+ET
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 388.00 Td
+(6. Dark / Light Mode Switcher with LocalStorage Memory) Tj
+ET
+BT
+/F2 7.5 Tf
+0.25 0.35 0.65 rg
+477.13 388.00 Td
+([ Date : nov 02, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 385.00 m 572 385.00 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 374.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 374.00 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 374.00 Td
+(November 02, 2026 \(Date : nov 02, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 364.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 364.00 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 364.00 Td
+(A complete dual-palette color theme system with interactive sun/moon SVG toggle in the header, persisting across) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 354.00 Td
+(browser sessions.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 344.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 344.00 Td
+(Anti-Flicker Pre-render Script: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+191.28 344.00 Td
+(A synchronous inline script placed in <head> inspects localStorage before <body> paints,) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 334.00 Td
+(completely eliminating bright white flashes on reload.) Tj
+ET
+0.86 0.89 0.94 rg
+40 256.00 532 70.00 re f
+0.5 w
+0.7 0.75 0.82 RG
+40 256.00 532 70.00 re S
+BT
+/F2 6.5 Tf
+0.2 0.3 0.55 rg
+47.00 321.00 Td
+(FOIT PREVENTION ARCHITECTURE) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 310.00 Td
+(// Synchronous Anti-Flicker Script in <head>:) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 301.00 Td
+(\(function\(\) {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 292.00 Td
+(    const saved = localStorage.getItem\("portfolio-theme"\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 283.00 Td
+(    const prefersDark = window.matchMedia && window.matchMedia\("\(prefers-color-scheme: dark\)"\).matches;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 274.00 Td
+(    document.documentElement.setAttribute\("data-theme", saved || \(prefersDark ? "dark" : "light"\)\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 265.00 Td
+(}\)\(\);) Tj
+ET
+0.4 w
+0.8 0.82 0.85 RG
+40 40 m 572 40 l S
+BT
+/F1 7.2 Tf
+0.45 0.5 0.55 rg
+40 28 Td
+(Professional Portfolio — Features & Technical Changelog \(Nov 02 - Nov 03, 2026\)) Tj
+ET
+BT
+/F1 7.2 Tf
+0.45 0.5 0.55 rg
+532.4 28 Td
+(Page 2 of 3) Tj
+ET
+
+endstream
+endobj
+8 0 obj
+<< /Length 7150 >>
+stream
+BT
+/F3 7.5 Tf
+0.4 0.45 0.5 rg
+40 764 Td
+(PORTFOLIO ENHANCEMENT REPORT — FEATURES & IMPLEMENTATION LOG) Tj
+ET
+0.4 w
+0.8 0.82 0.85 RG
+40 758 m 572 758 l S
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 735.00 Td
+(7. Dynamic Typewriter Subtitle Loop) Tj
+ET
+BT
+/F2 7.5 Tf
+0.25 0.35 0.65 rg
+477.13 735.00 Td
+([ Date : nov 02, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 732.00 m 572 732.00 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 721.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 721.00 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 721.00 Td
+(November 02, 2026 \(Date : nov 02, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 711.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 711.00 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 711.00 Td
+(The static hero subtitle was upgraded to a dynamic typewriter cycling through: "MERN Stack Developer", "Full-Stack) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 701.00 Td
+(Developer", "React.js & Node.js Specialist", and "Passionate Problem Solver".) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 691.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 691.00 Td
+(How it was built: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 691.00 Td
+(A recursive state-machine setTimeout loop handling variable typing delays \(90ms typing, 1800ms full word hold,) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 681.00 Td
+(45ms deleting, 400ms word switch\) paired with CSS @keyframes cursorBlink.) Tj
+ET
+0.86 0.89 0.94 rg
+40 585.00 532 88.00 re f
+0.5 w
+0.7 0.75 0.82 RG
+40 585.00 532 88.00 re S
+BT
+/F2 6.5 Tf
+0.2 0.3 0.55 rg
+47.00 668.00 Td
+(TYPEWRITER STATE MACHINE) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 657.00 Td
+(function typeEffect\(\) {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 648.00 Td
+(    const currentWord = words[wordIndex];) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 639.00 Td
+(    typedTextSpan.textContent = isDeleting ? currentWord.substring\(0, charIndex--\) : currentWord.substring\(0, charIndex++\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 630.00 Td
+(    let typeSpeed = isDeleting ? 45 : 90;) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 621.00 Td
+(    if \(!isDeleting && charIndex === currentWord.length\) { typeSpeed = 1800; isDeleting = true; }) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 612.00 Td
+(    else if \(isDeleting && charIndex === 0\) { isDeleting = false; wordIndex = \(wordIndex + 1\) % words.length; typeSpeed = 400; }) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 603.00 Td
+(    setTimeout\(typeEffect, typeSpeed\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 594.00 Td
+(}) Tj
+ET
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 576.00 Td
+(8. Scroll Reveal Animations) Tj
+ET
+BT
+/F2 7.5 Tf
+0.25 0.35 0.65 rg
+477.13 576.00 Td
+([ Date : nov 02, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 573.00 m 572 573.00 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 562.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 562.00 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 562.00 Td
+(November 02, 2026 \(Date : nov 02, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 552.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 552.00 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 552.00 Td
+(Smooth upward fade-and-slide entrance animations for headers, cards, and timeline entries as the user navigates.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 542.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 542.00 Td
+(How it was built: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 542.00 Td
+(Native browser IntersectionObserver activates .reveal.active when elements intersect 12% of the viewport.) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 532.00 Td
+(Includes full @media \(prefers-reduced-motion\) support.) Tj
+ET
+0.86 0.89 0.94 rg
+40 472.00 532 52.00 re f
+0.5 w
+0.7 0.75 0.82 RG
+40 472.00 532 52.00 re S
+BT
+/F2 6.5 Tf
+0.2 0.3 0.55 rg
+47.00 519.00 Td
+(INTERSECTIONOBSERVER REVEAL SYSTEM) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 508.00 Td
+(const observer = new IntersectionObserver\(\(entries, obs\) => {) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 499.00 Td
+(    entries.forEach\(e => { if \(e.isIntersecting\) { e.target.classList.add\("active"\); obs.unobserve\(e.target\); } }\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 490.00 Td
+(}, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }\);) Tj
+ET
+BT
+/F4 6.8 Tf
+0.1 0.15 0.25 rg
+47.00 481.00 Td
+(document.querySelectorAll\(".reveal"\).forEach\(el => observer.observe\(el\)\);) Tj
+ET
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 463.00 Td
+(9. Official Downloadable Resume & Contact Sync) Tj
+ET
+BT
+/F2 7.5 Tf
+0.25 0.35 0.65 rg
+477.13 463.00 Td
+([ Date : nov 02, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 460.00 m 572 460.00 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 449.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 449.00 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 449.00 Td
+(November 02, 2026 \(Date : nov 02, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 439.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 439.00 Td
+(What was added: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+122.64 439.00 Td
+(Integrated an official, calibrated vector resume.pdf with a one-click CTA download button in the Hero section and) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 429.00 Td
+(an interactive hover arrow micro-interaction.) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 419.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 419.00 Td
+(Contact Synchronization: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+161.25 419.00 Td
+(Updated contact points across the site: mushrafali2568@gmail.com, +91-8210766557, Patna, Bihar /) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 409.00 Td
+(Bengaluru, India.) Tj
+ET
+BT
+/F2 10 Tf
+0.08 0.25 0.65 rg
+40.00 395.00 Td
+(10. Technical Architecture & Quality Assurance) Tj
+ET
+BT
+/F2 7.5 Tf
+0.25 0.35 0.65 rg
+477.13 395.00 Td
+([ Date : nov 02, 2026 ]) Tj
+ET
+0.7 w
+0.2 0.35 0.7 RG
+40 392.00 m 572 392.00 l S
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 381.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 381.00 Td
+(Date Implemented: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+131.22 381.00 Td
+(November 02, 2026 \(Date : nov 02, 2026 | Verified Active Nov 03, 2026\)) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 371.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 371.00 Td
+(Zero External Dependencies: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+174.12 371.00 Td
+(0 KB third-party JavaScript bundles, 0 external CSS animation frameworks, 0 icon fonts \(all icons are) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 361.00 Td
+(inline SVGs\).) Tj
+ET
+BT
+/F2 7.8 Tf
+0.15 0.4 0.8 rg
+44.00 351.00 Td
+(•) Tj
+ET
+BT
+/F2 7.8 Tf
+0.1 0.15 0.2 rg
+54.00 351.00 Td
+(Performance & Responsiveness: ) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+182.70 351.00 Td
+(60 FPS silky smooth interactions, zero layout shifts \(CLS = 0\), and fluid responsiveness across) Tj
+ET
+BT
+/F1 7.8 Tf
+0.2 0.25 0.3 rg
+54.00 341.00 Td
+(desktop, tablet, and mobile.) Tj
+ET
+0.4 w
+0.8 0.82 0.85 RG
+40 40 m 572 40 l S
+BT
+/F1 7.2 Tf
+0.45 0.5 0.55 rg
+40 28 Td
+(Professional Portfolio — Features & Technical Changelog \(Nov 02 - Nov 03, 2026\)) Tj
+ET
+BT
+/F1 7.2 Tf
+0.45 0.5 0.55 rg
+532.4 28 Td
+(Page 3 of 3) Tj
+ET
+
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+10 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+11 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+12 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000286 00000 n 
+0000000445 00000 n 
+0000000604 00000 n 
+0000008018 00000 n 
+0000015819 00000 n 
+0000023021 00000 n 
+0000023091 00000 n 
+0000023167 00000 n 
+0000023246 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+23315
+%%EOF

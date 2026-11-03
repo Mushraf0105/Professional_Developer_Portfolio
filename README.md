@@ -19,14 +19,17 @@ A responsive, high-performance personal portfolio website built with semantic **
 ## 🚀 Deliverables Checklist
 
 - [x] **Responsive Portfolio Website:** Fully responsive layout adapting seamlessly across desktop, tablet, and mobile viewports.
-- [x] **Hero / Home Section:** Professional introduction, dynamic typewriter subtitle, call-to-action buttons, resume download, and profile picture.
+- [x] **Hero / Home Section:** Professional introduction, live availability badge, dynamic typewriter subtitle, call-to-action buttons, resume download, and profile picture.
+- [x] **Live "Available for Work" Indicator:** Pulsing radar status badge signaling current availability to recruiters.
 - [x] **About Section:** Background story, developer strengths, and quick details card.
 - [x] **Skills Section:** Categorized technical skill sets (Frontend, Backend, Databases & Cloud, Tools & Core).
-- [x] **Featured Projects Section:** Interactive project cards with technology stack badges and GitHub repository links.
+- [x] **Featured Projects Section:** Categorized project cards with interactive filter tabs, tech badges, and GitHub links.
+- [x] **Interactive Project Category Filter Tabs:** Filter projects by `All`, `Full-Stack / MERN`, `Mobile App`, and `Frontend & Tools`.
 - [x] **Experience & Education Section:** Structured dual-column timeline presenting internship experience and academic credentials.
 - [x] **Contact Section:** Working contact inquiry form with client-side field validation, regex email checking, and feedback messaging.
 - [x] **Responsive Navigation:** Sticky header with active scroll highlighting (scrollspy) and mobile hamburger menu.
 - [x] **Dynamic Scroll Progress Indicator:** Top-pinned viewport progress bar tracking real-time scroll depth.
+- [x] **Floating Back to Top with Circular Progress Ring:** Bottom-right floating button with real-time SVG circular progress indicator.
 - [x] **Dark / Light Mode Switcher:** Smooth theme toggle with persistent `localStorage` memory and synchronous anti-flicker pre-render script.
 - [x] **Dynamic Typewriter Effect:** Subtitle dynamically typing, pausing, and backspacing through specializations with blinking cursor.
 - [x] **Scroll Reveal Animations:** Butter-smooth entrance animations powered by native browser `IntersectionObserver` API.
@@ -43,6 +46,9 @@ A responsive, high-performance personal portfolio website built with semantic **
    - **CSS Grid** for two-dimensional page structures (About card grid, Skills cards, Projects cards, and Experience & Education timeline).
    - **Flexbox** for one-dimensional alignments (Navigation bar, Hero text & CTA buttons, inline tags, and Footer).
 3. **Interactive Features (100% Vanilla JavaScript, Zero External Libraries)**:
+   - **Live "Available for Work" Indicator**: Pulsing animated radar pill in the Hero section.
+   - **Interactive Project Category Filter Tabs**: Client-side categorization without page reloads.
+   - **Floating Back to Top with Circular Progress Ring**: Bottom-right floating button displaying SVG circular scroll completion.
    - **Dynamic Scroll Progress Bar**: Real-time reading depth indicator tracking viewport scroll percentage.
    - **Dark / Light Mode Toggle**: Theme switcher with persistent `localStorage` memory and an inline `<head>` script to eliminate Flash of Incorrect Theme (FOIT).
    - **Dynamic Typewriter Effect**: Rotating specializations in the hero subtitle with realistic typing, pause, and backspacing loops.
@@ -64,6 +70,9 @@ A responsive, high-performance personal portfolio website built with semantic **
 
 | Feature | Implementation Detail | External Libs |
 |---|---|---|
+| **Live Status Indicator** | CSS `@keyframes statusPulse` radar ring on `.status-dot` within `.status-pill` | None (Pure CSS) |
+| **Project Filter Tabs** | Filter buttons toggling `.is-hidden` on `[data-category]` matching project cards | None (Vanilla JS + CSS) |
+| **Circular Progress Scroll-to-Top** | SVG circle with dynamic `stroke-dashoffset` calculated via scroll depth + smooth window scrollTo | None (SVG + Vanilla JS) |
 | **Scroll Progress Bar** | Fixed top bar calculating `(scrollTop / scrollHeight) * 100` via passive scroll listener | None (Pure JS + CSS) |
 | **Dark / Light Mode** | CSS custom variables with `[data-theme="dark"]`, persisted in `localStorage` | None (Vanilla JS + CSS) |
 | **Anti-Flicker Script** | Inline synchronous `<head>` script evaluating theme before DOM paint | None (Vanilla JS) |
@@ -108,6 +117,7 @@ Professional_Portfolio/
 ├── script.js        # Vanilla JS logic (Typewriter, Scroll Progress, Theme, Observers)
 ├── profile.jpg      # Developer profile picture
 ├── resume.pdf       # Official resume document (downloadable)
+├── New_Features.pdf # Executive features report detailing all enhancements
 └── README.md        # Complete project documentation
 ```
 
@@ -174,6 +184,9 @@ Before and after every release or rollback, verify:
 - [x] **Mobile View**: Hamburger button appears; clicking it opens and closes the menu smoothly without horizontal page scrolling.
 - [x] **Theme Switcher**: Dark/Light mode toggles cleanly across all sections and persists on page refresh via `localStorage`.
 - [x] **Dynamic Scroll Progress**: Top gradient bar accurately tracks scroll progress from 0% to 100%.
+- [x] **Floating Circular Back-to-Top**: Appears after 350px of scroll; circular SVG progress ring dynamically fills and smoothly returns to top on click.
+- [x] **Live Availability Badge**: Pulsing green radar dot and status pill render clearly above the Hero title.
+- [x] **Project Category Filter**: Filter tabs (`All`, `Full-Stack`, `Mobile App`, `Frontend & Tools`) filter project cards instantly without page reload.
 - [x] **Typewriter Animation**: Subtitle rotates smoothly through roles with zero layout shift.
 - [x] **Scroll Reveal**: Sections and cards smoothly fade and glide into view as the viewport scrolls.
 - [x] **Resume Download**: Clicking "Download Resume" initiates an instant download of `Md_Mushraf_Ali_Resume.pdf`.

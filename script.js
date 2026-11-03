@@ -194,4 +194,65 @@ if ('IntersectionObserver' in window && revealElements.length > 0) {
     revealElements.forEach(el => el.classList.add('active'));
 }
 
+// Interactive Project Category Filter Tabs
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card[data-category]');
+
+if (filterBtns.length > 0 && projectCards.length > 0) {
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (filterValue === 'all' || cardCategory === filterValue) {
+                    card.classList.remove('is-hidden');
+                } else {
+                    card.classList.add('is-hidden');
+                }
+            });
+        });
+    });
+}
+
+// Floating Back to Top Button with Circular Progress Ring
+const scrollTopBtn = document.getElementById('scroll-top-btn');
+const progressCircle = document.getElementById('progress-circle');
+const circumference = 2 * Math.PI * 20; // ~125.66
+
+function handleScrollTopButton() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    if (scrollTopBtn) {
+        if (scrollTop > 350) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    }
+
+    if (progressCircle && scrollHeight > 0) {
+        const progress = Math.min(1, Math.max(0, scrollTop / scrollHeight));
+        const offset = circumference - (progress * circumference);
+        progressCircle.style.strokeDashoffset = offset;
+    }
+}
+
+if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+window.addEventListener('scroll', handleScrollTopButton, { passive: true });
+handleScrollTopButton();
+
+
 
